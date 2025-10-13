@@ -1,0 +1,45 @@
+/* ======================================
+   FOOTER
+====================================== */
+.footer {
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    text-align: center;
+    color: #00ff88;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.footer-socials a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #00ff88;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #0a0a0a;
+    background-color: #00ff88;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .tech-icons {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+}

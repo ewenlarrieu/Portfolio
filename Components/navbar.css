@@ -1,0 +1,67 @@
+/* NAVBAR */
+nav {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 15px rgba(0, 255, 136, 0.1);
+    border-bottom: 1px solid rgba(0, 255, 136, 0.15);
+}
+
+nav a {
+    color: #d4ffd4;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    transform: scale(1.1);
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00ff88;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        padding: 15px 0;
+    }
+}
