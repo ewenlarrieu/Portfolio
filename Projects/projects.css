@@ -39,3 +39,122 @@ p {
     font-size: 1.2rem;
     margin: 0 0 20px 0;
 }
+
+/* --- Header de la page --- */
+.projects-header {
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.projects-header h1 {
+
+
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    margin-bottom: 15px;
+}
+
+.hero-underline {
+    width: 700px;
+    max-width: 80%;
+    height: 4px;
+    background-color: #00ff88;
+    box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+    margin: 0 auto 20px;
+    border-radius: 2px;
+}
+
+.projects-header p {
+    color: #b8ffce;
+
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 20px;
+}
+
+/* Style des cartes */
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+    width: 90%;
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+/* Titres et texte */
+.project-card h3 {
+    color: #00ff88;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.project-card p {
+    color: #d4ffd4;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Liens (empilés verticalement) */
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-links a {
+    color: #00ff88;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.btn-project {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #00ff88;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-project:hover {
+    background-color: #00ff88;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+/* Section langages utilisés */
+.project-tech {
+    border-top: 1px solid rgba(0, 255, 136, 0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    color: #b8ffce;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.project-tech strong {
+    color: #00ff88;
+}
