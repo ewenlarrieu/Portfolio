@@ -8,21 +8,13 @@ body {
     box-sizing: border-box;
 }
 
-body,
-h1,
-h2,
-h3,
-p,
-a {
-    font-family: 'Poppins', sans-serif;
-}
-
 /* ======================================
    HEADINGS & PARAGRAPHS
 ====================================== */
 h1 {
     font-size: 4rem;
     margin: 0;
+    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
 }
 
 h2 {
@@ -31,13 +23,15 @@ h2 {
 }
 
 h3 {
-    font-size: 2rem;
-    margin: 0;
+    color: #00ff88;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
 p {
     font-size: 1.2rem;
     margin: 0 0 20px 0;
+    color: #b8ffce;
 }
 
 /* --- Header de la page --- */
@@ -47,9 +41,6 @@ p {
 }
 
 .projects-header h1 {
-
-
-    text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
     margin-bottom: 15px;
 }
 
@@ -61,11 +52,6 @@ p {
     box-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
     margin: 0 auto 20px;
     border-radius: 2px;
-}
-
-.projects-header p {
-    color: #b8ffce;
-
 }
 
 .projects-grid {
@@ -92,20 +78,6 @@ p {
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
-}
-
-/* Titres et texte */
-.project-card h3 {
-    color: #00ff88;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
-}
-
-.project-card p {
-    color: #d4ffd4;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
 }
 
 /* Liens (empilés verticalement) */
