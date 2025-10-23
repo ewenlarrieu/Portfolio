@@ -20,7 +20,7 @@
     </nav>
     <section class="Contact-section">
       <h1>Contactez-moi</h1>
-      <form class="contact-form">
+      <form id="contactForm" class="contact-form">
         <div class="form-group">
           <label for="email">Email</label>
           <input
@@ -63,6 +63,45 @@
         </div>
         <button type="submit" class="btn-send">Envoyer</button>
       </form>
+
+      <p id="form-status"></p>
+
+      <script>
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const formData = {
+              email: document.getElementById("email").value,
+              nom: document.getElementById("nom").value,
+              prenom: document.getElementById("prenom").value,
+              message: document.getElementById("message").value,
+            };
+
+            const status = document.getElementById("form-status");
+            status.textContent = "⏳ Envoi en cours...";
+
+            try {
+              const response = await fetch("http://localhost:3000/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+              });
+
+              const data = await response.json();
+
+              if (data.success) {
+                status.textContent = "✅ Message envoyé avec succès !";
+                document.getElementById("contactForm").reset();
+              } else {
+                status.textContent = "❌ Erreur : " + data.error;
+              }
+            } catch (error) {
+              status.textContent = "⚠️ Erreur de connexion au serveur.";
+            }
+          });
+      </script>
     </section>
     <footer class="footer">
       <p>Ewen Larrieu © 2025 | Développeur Web Full Stack</p>

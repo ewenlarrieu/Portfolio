@@ -68,7 +68,7 @@ p {
     border: 1px solid rgba(0, 255, 136, 0.2);
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
-    width: 90%;
+    width: 70%;
     max-width: 800px;
     padding: 30px;
     text-align: center;
@@ -129,4 +129,11 @@ p {
 
 .project-tech strong {
     color: #00ff88;
+}
+
+#form-status {
+    margin-top: 15px;
+    font-weight: 500;
+    color: #00ff88;
+    text-align: center;
 }
