@@ -92,13 +92,13 @@
               const data = await response.json();
 
               if (data.success) {
-                status.textContent = "✅ Message envoyé avec succès !";
+                status.textContent = "Message envoyé avec succès !";
                 document.getElementById("contactForm").reset();
               } else {
                 status.textContent = "❌ Erreur : " + data.error;
               }
             } catch (error) {
-              status.textContent = "⚠️ Erreur de connexion au serveur.";
+              status.textContent = "Erreur de connexion au serveur.";
             }
           });
       </script>
