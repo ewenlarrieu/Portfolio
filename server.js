@@ -10,6 +10,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static("."));
+
+// Route pour la page d'accueil
+app.get("/", (req, res) => {
+  res.sendFile("Home/index.html", { root: "." });
+});
+
 app.post("/send", async (req, res) => {
   const { nom, prenom, email, message } = req.body;
 
@@ -46,6 +53,8 @@ app.post("/send", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () =>
-  console.log(`✅ Serveur lancé sur http://localhost:${process.env.PORT}`)
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () =>
+  console.log(`✅ Serveur lancé sur http://localhost:${PORT}`)
 );
