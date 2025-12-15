@@ -163,6 +163,8 @@ p {
     justify-content: center;
     align-items: center;
     max-width: 900px;
+    margin: 0 auto;
+    justify-items: center;
 }
 
 .skill-card {
@@ -306,6 +308,10 @@ p {
     .skills-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .skill-card {
@@ -379,8 +385,17 @@ p {
         width: 95%;
     }
 
+    .skills-grid {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
     .skill-card {
         width: 100%;
+        max-width: 300px;
         padding: 15px;
     }
 
