@@ -234,35 +234,163 @@ p {
         font-size: 4.5rem;
     }
 
+    .hero-name {
+        font-size: 3rem;
+    }
+
     .hero-underline {
         width: 500px;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 }
 
 @media (max-width: 768px) {
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+        max-width: 95%;
     }
 
     .hero-name {
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-top: 25px;
     }
 
     .hero-underline {
-        width: 300px;
+        width: 80%;
+        max-width: 350px;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        margin: 60px auto;
+        padding: 0 30px;
+    }
+
+    .tech-stack-section {
+        margin: 60px auto;
+        width: 90%;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px;
+    }
+
+    .tech-frame img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .soft-skills-section {
+        margin: 60px auto;
+        width: 90%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .projects-preview {
+        margin: 80px auto;
+        width: 90%;
+    }
+
+    .btn-projects {
+        padding: 12px 30px;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
     }
 
     .hero-name {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+        margin-top: 20px;
     }
 
     .hero-underline {
-        width: 200px;
+        width: 90%;
+        max-width: 250px;
+        height: 3px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .about-section {
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .tech-stack-section {
+        margin: 50px auto;
+        width: 95%;
+    }
+
+    .tech-icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 30px;
+    }
+
+    .tech-frame {
+        padding: 15px;
+    }
+
+    .tech-frame img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .soft-skills-section {
+        margin: 50px auto;
+        width: 95%;
+    }
+
+    .skill-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .projects-preview {
+        margin: 60px auto;
+        width: 95%;
+    }
+
+    .btn-projects {
+        padding: 10px 25px;
+        font-size: 0.95rem;
     }
 }

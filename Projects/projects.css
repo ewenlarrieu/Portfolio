@@ -58,8 +58,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    padding: 80px 20px;
+    gap: 70px;
+    padding: 80px 40px;
 }
 
 /* Style des cartes */
@@ -70,7 +70,7 @@ p {
     box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
     width: 70%;
     max-width: 800px;
-    padding: 30px;
+    padding: 40px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -136,4 +136,97 @@ p {
     font-weight: 500;
     color: #00ff88;
     text-align: center;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+
+@media (max-width: 1024px) {
+    .project-card {
+        width: 80%;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .projects-header {
+        padding: 60px 20px 40px;
+    }
+
+    .hero-underline {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .projects-grid {
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .project-card {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .btn-project {
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    .projects-header {
+        padding: 50px 15px 30px;
+    }
+
+    .hero-underline {
+        width: 90%;
+        max-width: 250px;
+        height: 3px;
+    }
+
+    .projects-grid {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 95%;
+        padding: 20px 15px;
+    }
+
+    .btn-project {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .project-tech {
+        font-size: 0.9rem;
+    }
 }
